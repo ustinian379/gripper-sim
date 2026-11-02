@@ -1,0 +1,10 @@
+numpy>=1.24
+opencv-python>=4.8
+matplotlib>=3.7
+
+# --- 关于 pybullet ---
+# 这里故意不写 pybullet：Windows 上 pip 安装 pybullet 需要 MSVC + CMake 现场编译，
+# 本机没有编译环境，会直接失败（PyPI 只发布 Linux 轮子）。
+# 本项目用的是 conda-forge 提供的 pybullet 3.25 预编译包，已经放进项目内的 venv
+# （projects/gripper-sim/.venv），不需要也不能再用 pip 装。
+# 完整的安装、激活与运行步骤见「开始这里.md」的「第一步：环境」，不要用 requirements.txt / pip 装 pybullet。
